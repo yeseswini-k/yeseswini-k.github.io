@@ -97,3 +97,33 @@ footer {
   font-size: 1.1em;
   color: #bea97c;
 }
+
+/* Marauder's Map styles */
+#map-container {
+  background: url('https://i.imgur.com/XLkCR6i.png') no-repeat center center;
+  background-size: contain;
+  height: 300px;
+  border: 2px solid #dbaf36;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px 3px #59397f;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Example interactive dots */
+.user-dot {
+  width: 18px;
+  height: 18px;
+  background-color: #dbaf36;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 8px 2px #f6de83;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
