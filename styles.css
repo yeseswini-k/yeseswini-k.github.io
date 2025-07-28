@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+body {
+  margin: 0; background: #181725; color: #f7e9c1;
+  font-family: 'IM Fell English SC', serif;
+  overflow-x: hidden;
+}
+
+.magic-bg {
+  position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(120deg, #181725, #57317d 60%, #202b36 100%);
+  animation: bgmove 10s linear infinite alternate;
+}
+
+@keyframes bgmove {
+  0% { background-position: 0 0; }
+  100% { background-position: 50% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 40px 10px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: #d3bc8e;
+}
+
+nav {
+  margin: 10px 0 20px;
+}
+nav a {
+  color: #ecd998;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 1.1em;
+  transition: color .2s;
+}
+nav a:hover {
+  color: #ffdb58;
+  text-shadow: 0 0 10px #fff7be;
+}
+
+h2 {
+  color: #dbaf36;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+section {
+  background: rgba(34,24,40,0.82);
+  margin: 24px auto;
+  padding: 28px 20px 16px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 24px 2px #59397f44;
+}
+ul, li {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+ul li {
+  margin-bottom: 16px;
+}
+
+.potions li:before {
+  content: "🧪 ";
+}
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 0 0 12px;
+  padding: 10px;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+  background: #f8e2a6;
+  box-shadow: 0 1px 4px #432;
+}
+form button {
+  background: #57317d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  transition: background .2s;
+}
+form button:hover {
+  background: #dbaf36;
+  color: #44245c;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.1em;
+  color: #bea97c;
+}
